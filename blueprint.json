@@ -1,0 +1,75 @@
+{
+  "name": "MyStarterKit3",
+  "description": "This is one amazing StarterKit",
+  "thumbnailURL": "blueprint/thumbnail.svg",
+  "appIconURL": "blueprint/appicon.svg",
+  "previewURLs": [],
+  "type": "WEB",
+  "tags": [],
+  "demoURL": "http://www.dardenweb.net",
+  "checklist": [
+    {
+      "label": "Do this",
+      "link": "https://ibm.com"
+    },
+    {
+      "label": "Do that",
+      "link": "https://ibm.com"
+    }
+  ],
+  "generators": {
+    "node": [
+      "generator-ibm-core-node-express",
+      "generator-ibm-cloud-enablement",
+      "generator-ibm-service-enablement",
+      "generator-ibm-usecase-enablement"
+    ],
+    "python": [
+      "generator-core-python-flask",
+      "generator-ibm-cloud-enablement",
+      "generator-ibm-service-enablement",
+      "generator-ibm-usecase-enablement"
+    ],
+    "java": [
+      "generator-ibm-java"
+    ],
+    "spring": [
+      "generator-ibm-java"
+    ],
+    "swift": [
+      "generator-swiftserver"
+    ]
+  },
+  "generatorOptions": {
+    "generator-ibm-core-node-express": {
+      "version": "latest"
+    },
+    "generator-core-python-flask": {
+      "scope": "@arf"
+    },
+    "generator-ibm-service-enablement": {},
+    "generator-ibm-cloud-enablement": {},
+    "generator-ibm-usecase-enablement": {},
+    "generator-ibm-java": {
+      "options": {
+        "headless": "true",
+        "buildType": "maven"
+      },
+      "java": {
+        "options": {
+          "createType": "skit/liberty"
+        }
+      },
+      "spring": {
+        "options": {
+          "createType": "skit/spring"
+        }
+      }
+    },
+    "generator-swiftserver": {}
+  },
+  "requiredCapabilities": [],
+  "requiredCapabilitiesURLs": {},
+  "servicePlans": {},
+  "email": "cloud@us.ibm.com"
+}
